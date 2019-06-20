@@ -1,10 +1,6 @@
 require 'pry'
 def prime?(num)
-  number = (num * num) % num
-  (2..(number - 1)).each do |n|
-    return false if number % n == 0
-  end
-  true
+  if number % number == 0 && number > 0
 end
 
 
