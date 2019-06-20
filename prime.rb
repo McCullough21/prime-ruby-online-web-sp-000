@@ -1,10 +1,10 @@
 require 'pry'
 def prime?(num)
-  if number <= 0
+  if num <= 0
     false
   end
-  (2..(number - 1)).each do |n|
-    return false if number % n == 0
+  (2..(num - 1)).each do |n|
+    return false if num % n == 0
   end
   true
 end
