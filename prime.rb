@@ -1,12 +1,12 @@
 require 'pry'
-def prime?(number)
-  if number % number == 0 && number > 0
-    true
-  elsif number == 0
-    false
-  else
+def prime?(num)
+  if number <= 0
     false
   end
+  (2..(number - 1)).each do |n|
+    return false if number % n == 0
+  end
+  true
 end
 
 
