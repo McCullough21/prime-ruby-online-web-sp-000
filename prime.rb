@@ -1,7 +1,7 @@
 require 'pry'
 def prime?(num)
   if num <= 0
-    false
+    return false
 binding.pry
   end
   (2..(num - 1)).each do |n|
