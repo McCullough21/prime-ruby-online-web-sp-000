@@ -1,5 +1,5 @@
 require 'pry'
-def prime?(num)
+def prime?(number)
   if number % number == 0 && number > 0
     true
   else
